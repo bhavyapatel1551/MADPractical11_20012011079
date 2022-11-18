@@ -2,6 +2,9 @@ package com.example.madpractical11_20012011079
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.core.view.WindowCompat
+import com.example.madpractical11_20012011079.databinding.ActivityNoteViewBinding
 
 
 class NoteViewActivity : AppCompatActivity() {

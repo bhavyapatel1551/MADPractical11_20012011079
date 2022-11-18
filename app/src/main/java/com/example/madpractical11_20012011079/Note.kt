@@ -1,10 +1,21 @@
 package com.example.madpractical11_20012011079
 
+import android.app.AlarmManager
+import android.app.PendingIntent
+import android.content.Context
+import android.content.Context.ALARM_SERVICE
+import android.content.Intent
+import java.io.Serializable
+import java.text.DateFormat
+import java.text.SimpleDateFormat
+import java.util.*
+
 enum class NoteMode{
     edit,
     add
 }
-class Note(var title:String, var subTitle:String, var Description:String, var modifiedTime:String, var isReminder: Boolean = false):Serializable
+class Note(var title:String, var subTitle:String, var Description:String, var modifiedTime:String, var isReminder: Boolean = false):
+    Serializable
 {
     var remindertime:Long = System.currentTimeMillis()
     var id = noteIdGeneration()

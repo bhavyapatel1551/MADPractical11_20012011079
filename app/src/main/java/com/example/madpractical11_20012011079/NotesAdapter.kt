@@ -1,5 +1,14 @@
 package com.example.madpractical11_20012011079
 
+import android.content.Context
+import android.content.Intent
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.example.madpractical11_20012011079.databinding.NoteItemViewBinding
+import java.io.Serializable
+
 class NotesAdapter (private val context: Context, private val array:ArrayList<Note>):
     RecyclerView.Adapter<NotesAdapter.NotesViewHolder>() {
     inner class NotesViewHolder(val binding: NoteItemViewBinding): RecyclerView.ViewHolder(binding.root)
